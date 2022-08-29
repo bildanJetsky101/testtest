@@ -45,6 +45,8 @@ export default function NavbarList() {
     //     }
        
     // },[carts])
+
+    console.log(userStatusLogin)
     
     const navigate = useNavigate()
 
@@ -100,7 +102,7 @@ export default function NavbarList() {
             </Nav>)
         }
         else if(isLogin){
-            if(userStatusLogin === "user" || status === '') {
+            if(userStatusLogin === "user" || userStatusLogin === '' || userStatusLogin === undefined) {
                 return(
                     <Nav style={{display:'flex', width:'8%', marginTop:'15px', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                         {cartStatus?
