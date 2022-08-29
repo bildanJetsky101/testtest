@@ -61,7 +61,7 @@ export default function LoginForm({show, setStatus, handleClose}){
 
             try {
             if (response?.status === 200) {
-              if(response.data.data.status === "admin"){
+              if(response.data.status === "admin"){
                 setStatus('admin')
               }
 

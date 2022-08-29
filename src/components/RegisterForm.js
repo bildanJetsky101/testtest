@@ -17,8 +17,6 @@ export default function RegisterForm({show, handleClose, setStatus }){
         password: '',
       });
 
-    const {name, email, password} = value
-
     const handleChange = (e) => {
         setValue({
             ...value,
